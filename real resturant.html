@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alqady Pizza Shop - The Best in world</title>
+  <link rel="stylesheet" href="real resturant.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home"><img src="home icon.png" alt="Home" width="20" height="20"> Home</a></li>
+          <li><a href="#menu"><img src="pizza icon.png" alt="Menu" width="20" height="20"> Menu</a></li>
+          <li><a href="#offers"><img src="offers icon.png" alt="Offers" width="20" height="20"> Offers</a></li>
+          <li><a href="#customize"><img src="rolling pin.png" alt="rolling bin" width="20" height="20"> Make Your Own</a></li>
+          <li><a href="#cart"><span id="cart-counter" class="cart-counter">0</span><img src="cart icon.png" alt="Cart" width="20" height="20"> Cart</a></li>
+          <li><a href="#contact"><img src="mail icon.png" alt="Contact" width="20" height="20"> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-text">
+        <h1>Welcome to Alqady Pizza Shop</h1>
+        <p>Our pizza is fresh, hot, and crafted with love. Discover the taste of perfection.</p>
+        <a href="#menu" class="cta">Order Now</a>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+      <div class="container">
+          <h2>Our Menu</h2>
+          <div class="menu-items">
+              <div class="menu-item">
+                  <img src="4 season pizza.jpg" alt="4 Season Pizza" class="menu-image">
+                  <h3>4 Season Pizza</h3>
+                  <p>$12.99</p>
+                  <button>Add to Cart</button>
+              </div>
+              <div class="menu-item">
+                  <img src="chicken BBQ.jpg" alt="Chicken BBQ Pizza" class="menu-image">
+                  <h3>Chicken BBQ</h3>
+                  <p>$14.99</p>
+                  <button>Add to Cart</button>
+              </div>
+              <div class="menu-item">
+                  <img src="mushroom pizza.jpg" alt="Mushroom Pizza" class="menu-image">
+                  <h3>Mushroom Pizza</h3>
+                  <p>$13.99</p>
+                  <button>Add to Cart</button>
+              </div>
+              <div class="menu-item">
+                  <img src="pepperoni.jpg" alt="Pepperoni Pizza" class="menu-image">
+                  <h3>Pepperoni Pizza</h3>
+                  <p>$15.99</p>
+                  <button>Add to Cart</button>
+              </div>
+              <div class="menu-item">
+                  <img src="sea food.jpg" alt="Seafood Pizza" class="menu-image">
+                  <h3>Seafood Pizza</h3>
+                  <p>$16.99</p>
+                  <button>Add to Cart</button>
+              </div>
+              <div class="menu-item">
+                  <img src="steak italian pizza.jpg" alt="Steak Italian Pizza" class="menu-image">
+                  <h3>Steak Italian Pizza</h3>
+                  <p>$12.99</p>
+                  <button>Add to Cart</button>
+              </div>
+              <div class="menu-item">
+                  <img src="super supreme.jpg" alt="Super Supreme Pizza" class="menu-image">
+                  <h3>Super Supreme</h3>
+                  <p>$18.99</p>
+                  <button>Add to Cart</button>
+              </div>
+              <div class="menu-item">
+                  <img src="vegan.jpg" alt="Vegan Pizza" class="menu-image">
+                  <h3>Vegan Pizza</h3>
+                  <p>$12.50</p>
+                  <button>Add to Cart</button>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="offers" class="deals-section">
+    <div class="container">
+        <h2>Exclusive Offers</h2>
+        <div class="deals">
+            <div class="deal">
+                <h3>Buy 1 Get 1 Free</h3>
+                <p>On medium and large pizzas.</p>
+                <button><a href="#menu" id="menubutton">Go to Menu</a></button>
+            </div>
+            <div class="deal">
+                <h3>Family Combo</h3>
+                <p>2 large pizzas + drinks for $29.99.</p>
+                <button class="add-to-cart" data-name="Family Combo" data-price="29.99">Add to Cart</button>
+            </div>
+            <div class="deal">
+                <h3>Student ID Discount</h3>
+                <p>20% discount on every pizza for a student with a valid student ID.</p>
+                <button class="check-id-button"><a href="#" id="menubutton">Check ID</a></button>
+            </div>
+            <div class="deal">
+                <h3>Free Drinks</h3>
+                <p>Free drinks with family meals (3+ persons).</p>
+                <button><a href="#menu" id="menubutton">Go to Menu</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="customize" class="customize-section">
+      <div class="container customize-card">
+        <h2>Make Your Pizza the Way You Love It</h2>
+        <form class="customize-pizza">
+          <label>
+            Choose Your Base:
+            <select id="base">
+              <option value="Thin Crust">Thin Crust</option>
+              <option value="Thick Crust">Thick Crust</option>
+              <option value="Stuffed Crust">Stuffed Crust</option>
+            </select>
+          </label>
+          <label>
+            Choose Your Toppings:
+            <div id="toppings_checkbox">
+              <button type="button" id="selectall">Select All</button>
+              <label>
+                <input type="checkbox" value="Pepperoni"> Pepperoni ($1.00)
+                <span class="checkmark"></span>
+              </label>
+              <label>
+                <input type="checkbox" value="Mushrooms"> Mushrooms ($0.75)
+                <span class="checkmark"></span>
+              </label>
+              <label>
+                <input type="checkbox" value="Onions"> Onions ($0.50)
+                <span class="checkmark"></span>
+              </label>
+              <label>
+                <input type="checkbox" value="Sausage"> Sausage ($1.25)
+                <span class="checkmark"></span>
+              </label>
+              <label>
+                <input type="checkbox" value="Bacon"> Bacon ($1.50)
+                <span class="checkmark"></span>
+              </label>
+              <label>
+                <input type="checkbox" value="Green Peppers"> Green Peppers ($0.75)
+                <span class="checkmark"></span>
+              </label>
+              <label>
+                <input type="checkbox" value="Black Olives"> Black Olives ($0.75)
+                <span class="checkmark"></span>
+              </label>
+              <label>
+                <input type="checkbox" value="Extra Cheese"> Extra Cheese ($1.00)
+                <span class="checkmark"></span>
+              </label>
+              <label>
+                <input type="checkbox" value="Pineapple"> Pineapple ($1.00)
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </label>
+          <label>
+            Select Size:
+            <select id="size">
+              <option value="Small">Small</option>
+              <option value="Medium">Medium</option>
+              <option value="Large">Large</option>
+              <option value="X-Large">X-Large</option>
+            </select>
+          </label>
+          <button id="Customize_button">Build Your Pizza</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="cart" class="cart-section">
+      <div class="container cart-card">
+        <h2>My Cart</h2>
+        <div class="table-responsive">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Original Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody class="cart-items">
+              <!-- Cart items will be dynamically added here -->
+            </tbody>
+          </table>
+        </div>
+        <div class="cart-summary">
+          <div class="summary-total">
+            <span>Total: $<span class="cart-total">0.00</span></span>
+          </div>
+          <div class="summary-buttons">
+            <button class="checkout-button">Checkout</button>
+            <a href="#menu" class="back-to-shop-button">Back to Shop</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <label>Name:</label>
+          <input type="text" required>
+          <label>Email:</label>
+          <input type="email" required>
+          <label>Message:</label>
+          <textarea required></textarea>
+          <button>Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <a id="footerfiles" href="invideo-ai-720 Inside Alqady Pizza_ A Slice of Alexandr 2025-02-09.mp4">Video about our shop</a><br>
+      <a id="footerfiles" href="alqady pizza menu.pdf">Download Our Menu</a><br>
+      <a id="footerfiles" href="Alqady Pizza Shop.docx">Read About Our Shop</a>
+      <p>&copy;2024 Alqady Pizza Shop All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="real resturant.js"></script>
+</body>
+</html>
